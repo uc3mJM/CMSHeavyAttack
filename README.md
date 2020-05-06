@@ -20,7 +20,7 @@ This Visual Studio C++ project consists of 3 files: CMSF.hpp (declaration file),
 * n: number of runs, default value is n=1
 
 ```
-example: cmsf.exe w=1048576 d=2, b=2, i=HOLAHOLAHOLA
+example: CMSHeavyAttack.exe w=1048576 d=2, b=2, i=HOLAHOLAHOLA
 ```
 
 ## Output
@@ -30,7 +30,7 @@ The ouput will depend on the number of runs. in the case of having only one run,
 With one run:
 
 ```
-.\CMSHeavyAttack.exe i=1 w=4096 d=2
+.\CMSHeavyAttack.exe n=1 w=4096 d=2
 ```
 
 ```
