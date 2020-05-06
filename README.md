@@ -1,7 +1,9 @@
 # Masquerating flows as Heavy Hitters in Count-Min Sketch
 
 ## Description
-The objective of this implementation is to attack CMS ([Count-Min Sketch](https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch)) in order to masquerate object as heavy hitters when they are not. In order to do this, a series of elements that overestimate the target element is found, adapting the inserts depending on the information obtained from the estimations.
+The objective of this implementation is to attack CMS ([Count-Min Sketch](https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch)) . The CMS is a data structures that is used to count the frequency of elements in a particular set,  widely used in networking and databases. This attack is based on masquerating objects like heavy hitters when they are not, a flow that surpasses a predefined threshold, therefore being considered a relevant element and disrupting it functionality of the network and potentially causing harm. In order to do this, a series of elements that overestimate the target element is found, adapting the inserts depending on the information obtained from the estimations.
+
+This code is used in the master's degree final project "Masquerading Flows as Heavy Hitter in Count-Min Sketch" by Josu Murua Salvadore.
 
 Uses the Fingerprint Count Min Sketch (FCMS) implementation of Count-Min Sketch as a starting point  [https://github.com/mladron/FCMS](https://github.com/mladron/FCMS)
 
