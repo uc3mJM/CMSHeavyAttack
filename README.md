@@ -18,7 +18,7 @@ This Visual Studio C++ project consists of 3 files: CMSF.hpp (declaration file),
 * b: fingerprint bits, default value is 0 for standard  Count-Min Sketch, when bits is not zero it indicates the bits used for the fingerprint related to the counter
 * c: conservative update {0: normal update, 1: conservative update}, default value is c=0
 * u: the fingerprint is used only if the counter is less than the given value, default value is u=0
-* i: input item, default value is i="ASDFGHJKLZXCVBNM"
+* i: input target item, default value is i="ASDFGHJKLZXCVBNM"
 * n: number of runs, default value is n=1
 
 ```
