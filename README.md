@@ -81,12 +81,9 @@ If the there is an input key, f="1000_ips.txt" for example, the CMS will be init
 
 ## RedisBloom
 
-To demonstrate that this attack is feasible in a real environment, it has been decided to implement a data base system that integrates a CMS, and for this a [Redis](https://redislabs.com/) database has been chosen. Redis is a database motor that relies on hash table storage, which additionally provides modules with various data types. One of these modules is [RedisBloom](https://oss.redislabs.com/redisbloom) which, among others, provides an implementation of Count-Min Sketch.
+To demonstrate that this attack is feasible in a real environment, it has been decided to implement a data base system that integrates a CMS, and for this a [Redis](https://redislabs.com/) database has been chosen. Redis is a database motor that relies on hash table storage, which additionally provides modules with various data types. One of these modules is [RedisBloom](https://oss.redislabs.com/redisbloom) which, among others, provides an implementation of Count-Min Sketch.This module provides an API with which you can perform operations such as initializing a Count-Min sketch to the dimensions specified by the user, increasing the object count, the return count for the items and more.
 
-This module provides an API with which you can perform operations such as initializing a Count-Min sketch to the dimensions specified by the user, increasing the object count, the return count for the items and more. The implementation has been done in Python 3 with [redisbloom-py}](https://github.com/RedisBloom/redisbloom-py), a package that extens redis-py interface (Pyhton interface to Redis) with the RedisBloom API.
-
-
-
+RedisBloomAttack.py has be implemented in Python 3 with [redisbloom-py](https://github.com/RedisBloom/redisbloom-py), a package that extens redis-py interface (Pyhton interface to Redis) with the RedisBloom API, in order to carry out the attack. This code is also provided.
 
 ## Authors
 
